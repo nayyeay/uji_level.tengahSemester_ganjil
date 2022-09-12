@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- untuk judul di tab pada browser -->
+    <title>celana</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+</head>
+<style>
+    body {
+    font-family: 'Segoe UI';            /* font yang digunakan */
+    font-size: 26px;                    /* ukuran font */
+    color: black;                     /* warna font */
+    margin: 0;                          /* nol margin agar tidak ada gap antara body dan isinya */
+}
+
+
+main {
+    background-color: #fafafa;         /* background untuk content / main */
+    margin-top: 10px;
+    /* padding: 60px 290px 0px 290px; */
+}
+
+
+/* styling  bagian header*/
+header {
+    background-color: #FFFFFF;
+    align-items: center;                 /* membuat posisi elemen di tengah  */
+    display: grid;                       /* display grid aja ga ada penjelasannya */
+    grid-template-columns: 1fr 1fr 1fr;  /* membuat border untuk batas header dan main  */
+    /* border-bottom: 1px solid #dbdbdb; */
+    max-width: 975px;                    /* membuat 3 line dengan 1 line + 1 line + 1 line */
+    width: 100%;                         /* membuat pembatas / limit widhth*/
+    margin: 0 auto;                      /* dengan margin 0 auto, posisi akan berada ditengah body */
+}
+
+/* tulisan instagram bagian kiri atas */
+.Instagram {
+    font-family: 'Grand Hotel';
+    font-size: 36px;
+}
+/* styling placeholder */
+::-webkit-input-placeholder{
+   text-align: center;
+   color: #8d8d8d;
+   font-weight: 100;
+}
+::-moz-placeholder{
+    text-align: center;
+    color: #8d8d8d;
+    font-weight: 100;   
+}
+
+/* styling search engine */
+.search {
+    border: solid 1px #dbdbdb;
+    background-color: #fafafa;
+    border-radius: 3px;
+    line-height: 30px;
+    width: 300px;
+}
+
+/* styling img pada class icon bagian kanan atas */
+ .icon img {
+    width: 40px;
+    align-items: center
+}
+
+.profile {
+    padding: 60px;
+    padding-bottom: 0px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: minmax(200px, 200px);
+    max-width: 975px;
+    margin: 0 auto;
+}
+
+.fotoProfile {
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.profile ul{
+    padding-left: 10px;
+}
+
+.userName {
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.fontButton{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+button {
+    background: 0;
+    border: 1px solid #dbdbdd;
+    border-radius: 3px;
+    line-height: 30px;
+    color: #262626;
+    /* display: inline-block; */
+    padding: 0px 24px;
+}
+
+.picture {
+    width: 293px;
+    height: 293px;
+    object-fit: cover;
+
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100%,100% );
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    max-width: 975px;
+    margin: 0 auto;
+
+}
+
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+}
+
+li {
+    display: inline; 
+    margin-right: 25px;
+    font-size: 16px;
+
+}
+
+
+</style>
+<body>
+    <body background="assets/images/white wlpp.jpg">
+        <nav class="navbar navbar-expand-lg bg-secondary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Olshop_RH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="kemeja.html">Kemeja</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sepatu.html">Sepatu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="jaket.html">Jaket</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="celana.html">Celana</a>
+                </li>
+              </div>
+            </div>
+            <form class="d-flex" role="search" >
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </li>
+          </nav>
+    
+    <!-- bagian biodata -->
+    <main>
+        <hr>
+        <!-- bagian biodata isinya photo profile, username dan info follow -->
+        <div class="profile">
+            <!-- grid pertama (1fr); photo profile -->
+            <img class="fotoProfile" src="assets/images/tere liye.jpg">
+            
+            <!-- grid ke dua (2fr); username dan biodata -->
+            <div>
+                <!-- unordered list yang berisi list item; 1.username 2.button edit 3.setting icon -->
+                <ul>
+                    <li><span class="userName">Nayyeay</span>
+                    </li>
+
+                    <li><span style="position: absolute; padding: 7px"><button class="fontButton">Edit Profile</button>&emsp;<span style="position: absolute; padding-top: 1px" ><img src="https://cdn3.iconfinder.com/data/icons/fez/512/FEZ-04-128.png" width="28px"></span></span></li>
+                </ul>
+                
+                <!--  unordered list yang berisi list item; 1.jumlah post 2.followers 3.following -->
+                <ul>
+                    <li>
+                        <span  style="padding-right: 20px;"></span><b></b> posts</span></li>
+                    <li>
+                        <b>1k</b> Followers</li>
+                    <li>
+                        <b>200</b> Following</li>
+                </ul>
+
+                <!--  unordered list yang berisi list item; 1.nama 2.bio -->
+                <ul>
+                    <li>
+                        <b>Celanaa</b>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <hr> <br>
+        <div class="row mt-5 g-0">
+            <div class="col-4">
+                <img src="assets/images/celana1.jpg" class="img-thumbnail" alt="...">
+            </div>
+            <div class="col-4">
+                <img src="assets/images/celana2.jpg" class="img-thumbnail" alt="...">
+            </div>
+            <div class="col-4">
+                <img src="assets/images/celana3.jpg" class="img-thumbnail" alt="...">
+            </div>
+        </div>
+
+   <!-- Footer -->
+   <footer class="text-center text-lg-start bg-secondary text-muted">
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center bg-light text-md-start">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-lg-3 col-lg-2 col-xl-2s mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>
+            <p>
+             Nama: Nayla Azzahra
+             <br>
+             Kelas: XII 1
+             <br>
+             Github: nayyeay.12rpl1.2022
+            </p>
+          </div>
+          <div class="col-6 text-center">
+            <p>Copyright 2022 : Naylaa</p>
+        </div>
+          <div class="col-md-2 col-md-3 col-md-2 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              zeyaa@1234.com
+            </p>
+            <p><i class="bi bi-telephone"></i></p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+<script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
